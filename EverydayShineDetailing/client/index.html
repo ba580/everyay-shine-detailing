@@ -1,36 +1,65 @@
-const router = require('express').Router();
-const Stripe = require('stripe');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everyday Shine Detailing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-const stripe = Stripe(process.env.STRIPE_SECRET);
+<body>
 
-router.post('/create-checkout-session', async (req, res) => {
+<header class="navbar">
+  <h1>EVERYDAY SHINE</h1>
 
-  const session = await stripe.checkout.sessions.create({
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="showcase.html">Showcase</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
 
-    payment_method_types: ['card'],
+<section class="hero">
 
-    line_items: [
-      {
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: 'Premium Detail Package'
-          },
-          unit_amount: 24900
-        },
-        quantity: 1
-      }
-    ],
+  <div class="hero-content">
+    <h2>LUXURY DETAILING</h2>
 
-    mode: 'payment',
+    <p>
+      Premium mobile detailing experience built for perfection.
+    </p>
 
-    success_url: 'http://localhost:5000/success.html',
-    cancel_url: 'http://localhost:5000/cancel.html'
+    <a href="services.html" class="btn">Explore Services</a>
+  </div>
 
-  });
+</section>
 
-  res.json({ id: session.id });
+<section class="home-cards">
 
-});
+  <div class="card">
+    <h3>Interior Detailing</h3>
+    <p>Deep interior restoration.</p>
+  </div>
 
-module.exports = router;
+  <div class="card">
+    <h3>Paint Correction</h3>
+    <p>Remove swirls and scratches.</p>
+  </div>
+
+  <div class="card">
+    <h3>Ceramic Coating</h3>
+    <p>Long lasting paint protection.</p>
+  </div>
+
+</section>
+
+<footer>
+  <h2>EVERYDAY SHINE DETAILING</h2>
+</footer>
+
+</body>
+</html>
