@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Appointment | Everyday Shine Detailing</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      <h1>EVERYDAY SHINE</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="showcase.html">Showcase</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html">Booking</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="booking-hero">
+
+    <div class="booking-overlay"></div>
+
+    <div class="booking-hero-content">
+
+      <h2>BOOK YOUR DETAIL</h2>
+
+      <p>
+        Premium appointments for premium vehicles.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- BOOKING FORM -->
+
+  <section class="booking-section">
+
+    <form class="booking-form" id="bookingForm">
+
+      <h2>Appointment Form</h2>
+
+      <!-- NAME -->
+
+      <div class="input-group">
+        <label>Full Name</label>
+
+        <input type="text" placeholder="John Smith" required>
+      </div>
+
+      <!-- EMAIL -->
+
+      <div class="input-group">
+        <label>Email Address</label>
+
+        <input type="email" placeholder="example@email.com" required>
+      </div>
+
+      <!-- PHONE -->
+
+      <div class="input-group">
+        <label>Phone Number</label>
+
+        <input type="tel" placeholder="(555) 555-5555" required>
+      </div>
+
+      <!-- VEHICLE -->
+
+      <div class="input-group">
+        <label>Vehicle</label>
+
+        <input type="text" placeholder="2024 BMW M3" required>
+      </div>
+
+      <!-- SERVICE -->
+
+      <div class="input-group">
+        <label>Select Service</label>
+
+        <select required>
+
+          <option value="">Choose Service</option>
+
+          <option>Interior Detail</option>
+
+          <option>Exterior Detail</option>
+
+          <option>Full Detail</option>
+
+          <option>Ceramic Coating</option>
+
+          <option>Paint Correction</option>
+
+          <option>Maintenance Wash</option>
+
+        </select>
+      </div>
+
+      <!-- DATE -->
+
+      <div class="input-group">
+        <label>Preferred Date</label>
+
+        <input type="date" required>
+      </div>
+
+      <!-- TIME -->
+
+      <div class="input-group">
+        <label>Preferred Time</label>
+
+        <input type="time" required>
+      </div>
+
+      <!-- NOTES -->
+
+      <div class="input-group">
+        <label>Additional Notes</label>
+
+        <textarea placeholder="Tell us about your vehicle or appointment needs"></textarea>
+      </div>
+
+      <!-- BUTTON -->
+
+      <button type="submit" class="booking-btn">
+        BOOK APPOINTMENT
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>EVERYDAY SHINE DETAILING</h2>
+
+    <p>
+      Luxury Mobile Detailing Experience
+    </p>
+
+  </footer>
+
+  <!-- SCRIPT -->
+
+  <script>
+
+    const bookingForm = document.getElementById('bookingForm');
+
+    bookingForm.addEventListener('submit', function(e){
+
+      e.preventDefault();
+
+      alert('Appointment Request Submitted!');
+
+      bookingForm.reset();
+
+    });
+
+  </script>
+
+</body>
+</html>
