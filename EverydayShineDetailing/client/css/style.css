@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial;
+  background:#050505;
+  color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 8%;
+  background:black;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#00d9ff;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  background:url('images/hero.jpg');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero-content h2{
+  font-size:5rem;
+  margin-bottom:20px;
+}
+
+.hero-content p{
+  margin-bottom:30px;
+}
+
+.btn{
+  padding:15px 35px;
+  background:#00d9ff;
+  color:black;
+  text-decoration:none;
+  border-radius:50px;
+}
+
+/* CARDS */
+
+.home-cards,
+.services-grid,
+.pricing-grid,
+.gallery{
+  padding:100px 8%;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card,
+.service-card,
+.price-card{
+  background:#111;
+  padding:40px;
+  border-radius:20px;
+}
+
+.featured{
+  border:2px solid #00d9ff;
+}
+
+.page-banner{
+  padding:120px 8%;
+  text-align:center;
+  background:#111;
+}
+
+.page-banner h2{
+  font-size:4rem;
+}
+
+.about-page{
+  padding:100px 8%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+.about-page img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* CONTACT */
+
+.contact-form{
+  max-width:700px;
+  margin:100px auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:20px;
+  background:#111;
+  border:none;
+  color:white;
+}
+
+.contact-form button{
+  padding:18px;
+  background:#00d9ff;
+  border:none;
+}
+
+/* LOGIN */
+
+.login-container{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.login-box{
+  background:#111;
+  padding:50px;
+  border-radius:20px;
+  width:400px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.login-box input{
+  padding:15px;
+  background:#1a1a1a;
+  border:none;
+  color:white;
+}
+
+.login-box button{
+  padding:15px;
+  background:#00d9ff;
+  border:none;
+}
+
+/* CART */
+
+.cart-container{
+  max-width:900px;
+  margin:100px auto;
+  padding:40px;
+}
+
+.cart-item{
+  background:#111;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:20px;
+}
+
+.cart-total button{
+  padding:18px 35px;
+  background:#00d9ff;
+  border:none;
+}
