@@ -1,0 +1,1 @@
+# everyay-shine-detailing
